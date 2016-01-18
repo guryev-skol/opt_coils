@@ -18,7 +18,7 @@ SAR_struct;      % initialize SAR structure
 % set constant parameters
 
 N_legs = 16;                        % number of legs
-legs_angle = 2 * pi / n_legs;       % angle betweeen two consecutive legs (gaps)
+legs_angle = 2 * pi / N_legs;       % angle betweeen two consecutive legs (gaps)
 rotation_axis = [0.0, 0.0, 0.0];    % rotate coil around fixed axis
 
 % set SAR file parameters
@@ -39,7 +39,7 @@ Load_Coils(ls_coilname, coilpath);   % load coils
 %solve for ls
 for leg = 1:N_legs
     
-    Marie_Solve_sc(0);
+    MARIE_Solve_sc();
     
     S = S + SOL.Ssol;
     
@@ -53,7 +53,7 @@ Load_Coils(us_coilname, coilpath);   % load coils
 % solve for us
 for leg = 1:N_legs
     
-    Marie_Solve_sc(0);
+    MARIE_solve_sc();
     
     S = S + SOL.Ssol;
     

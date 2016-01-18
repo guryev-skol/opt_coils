@@ -80,7 +80,7 @@ for i = 1:Ns_r
         
         Load_RHBM(body_name, body_path);
         
-        Birdcage_solver(ls_coil_name, us_coil_name, coilpath, 0);
+        Birdcage_solver(ls_coil_name, us_coil_name, coil_path, 0);
 
         % rotations go here
         
