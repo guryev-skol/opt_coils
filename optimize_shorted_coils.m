@@ -16,11 +16,11 @@ global SAR;
 %% setting paths
 
 if ispc
-    coil_path = 'C:\Users\Georgy\Desktop\MARIE\data\coils\';
-    body_path = 'C:\Users\Georgy\Desktop\MARIE\data\bodies\';
+    coil_path = 'C:\Users\Georgy\Desktop\opt_coils\data\coils\';
+    body_path = 'C:\Users\Georgy\Desktop\opt_coils\data\bodies\';
 else 
-    coil_path = '~/Desktop/MARIE-master/data/coils/';
-    body_path = '~/Desktop/MARIE-master/data/bodies/';
+    coil_path = '~/Desktop/opt_coils/data/coils/';
+    body_path = '~/Desktop/opt_coils/data/bodies/';
 end;
 
 %body_name = 'RHBM_HT_5mm.vmm';
