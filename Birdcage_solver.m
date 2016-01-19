@@ -11,9 +11,6 @@ global RHBM;
 global SOL;
 global SAR;
 
-
-init_marie();    % initialize marie               
-SAR_struct;      % initialize SAR structure
     
 % set constant parameters
 

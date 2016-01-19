@@ -73,6 +73,9 @@ for i = 1:Ns_r
         
         len = l(j);
         
+        init_marie();    % initialize marie               
+        SAR_struct;      % initialize SAR structure
+        
         % init all structures
         coil_name = cur_coil_name(len, rad);
         [ls_coil_name, us_coil_name] = cur_shorted_coil_names(len, rad);
