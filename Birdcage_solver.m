@@ -50,7 +50,7 @@ Load_Coils(us_coilname, coilpath);   % load coils
 % solve for us
 for leg = 1:N_legs
     
-    MARIE_solve_sc();
+    MARIE_Solve_sc();
     
     S = S + SOL.Ssol;
     
