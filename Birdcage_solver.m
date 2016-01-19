@@ -27,7 +27,7 @@ filename = strcat(filename, '.sar');
 
 %% solve 
 
-S = [];     % this variable stores total local SAR           
+S = zeros(size(RHBM));     % this variable stores total local SAR           
 
 
 %computing SAR for lower shorted  Birdcage  
