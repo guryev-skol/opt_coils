@@ -1,4 +1,4 @@
-function Birdcage_solver(ls_coilname, us_coilname, coilpath, angle)
+function Birdcage_solver(coil_name, ls_coilname, us_coilname, coilpath, angle)
 % function Birdcage_solver() 
 % is a rutine for computing local SAR 
 % for a birdcage; function exploits principle of reciprocity 
@@ -19,7 +19,7 @@ legs_angle = 2 * pi / N_legs;       % angle betweeen two consecutive legs (gaps)
 rotation_axis = [0.0, 0.0, 0.0];    % rotate coil around fixed axis
 
 % set SAR file parameters
-filename = strcat(SAR.Coil_name, '_angle_')
+filename = strcat(coil_name, '_angle_')
 filename = strcat(filename, num2str(angle));
 filename = strcat(filename, '.sar');
 

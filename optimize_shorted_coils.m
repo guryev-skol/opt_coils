@@ -90,7 +90,7 @@ for i = 1:Ns_r
                         
             theta = min_theta + k * d_theta;
             
-            Birdcage_solver(ls_coil_name, us_coil_name, coil_path, theta);
+            Birdcage_solver(coil_name, ls_coil_name, us_coil_name, coil_path, theta);
             
             
             cntr = (i-1) * N_theta * Ns_l + (j-1)* N_theta + k;
