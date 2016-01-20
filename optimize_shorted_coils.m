@@ -82,21 +82,16 @@ for i = 1:Ns_r
         
         
         Load_RHBM(body_name, body_path);
-        
-        Birdcage_solver(ls_coil_name, us_coil_name, coil_path, 0);
 
         % rotations go here
         
         for k = 1:N_theta
         % simulation
-            
-            Load_Coils(coil_name, coil_path);
-            
+                        
             theta = min_theta + k * d_theta;
             
-            rotate_geometry_over_head(0,0,theta);
-            %rotate_head(0, 0, theta)   
-            MARIE_Solve(theta);
+            Birdcage_solver(ls_coil_name, us_coil_name, coil_path, theta);
+            
             
             cntr = (i-1) * N_theta * Ns_l + (j-1)* N_theta + k;
             progress = cntr / (N_theta * Ns_l * Ns_r);

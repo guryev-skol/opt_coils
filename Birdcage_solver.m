@@ -33,6 +33,8 @@ S = zeros(size(RHBM));     % this variable stores total local SAR
 %computing SAR for lower shorted  Birdcage  
 Load_Coils(ls_coilname, coilpath);   % load coils
 
+rotate_geometry_over_head(0,0,angle); % rotate coil over head
+
 %solve for ls
 for leg = 1:N_legs
     
@@ -46,6 +48,8 @@ end;
 
 %computing SAR for upper shorted  Birdcage  
 Load_Coils(us_coilname, coilpath);   % load coils
+
+rotate_geometry_over_head(0,0,angle); % rotate coil over head
 
 % solve for us
 for leg = 1:N_legs
